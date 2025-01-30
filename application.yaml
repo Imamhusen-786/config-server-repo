@@ -1,7 +1,10 @@
 #Config server details, adding 
 
 eureka:
+  instance: 
+   prefer-ip-address: true
   client:
+    fetch-registry: true
     register-with-client: true
     ServiceUrl:
       defaultZone: http://localhost:8761/eureka/
